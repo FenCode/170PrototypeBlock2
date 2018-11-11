@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\Scripts\SelectOnInput.cs" />
+    <Compile Include="Assets\Scripts\SwipeScript.cs" />
     <Compile Include="Assets\Unity Sample UI\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Unity Sample UI\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Unity Sample UI\Scripts\ChangeColor.cs" />
