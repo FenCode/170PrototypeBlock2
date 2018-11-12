@@ -14,7 +14,7 @@ public class SwipeScript : MonoBehaviour {
     Vector2 secondPressPos;
     Vector2 currentSwipe;
 
-    public void Swipe()
+    void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -34,25 +34,25 @@ public class SwipeScript : MonoBehaviour {
 
             //swipe upwards
             if (currentSwipe.y > 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
-        {
+            {
                 Debug.Log("up swipe");
             }
             //swipe down
             if (currentSwipe.y < 0 && currentSwipe.x > -0.5f && currentSwipe.x < 0.5f)
-        {
+            {
                 Debug.Log("down swipe");
             }
             //swipe left
             if (currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
-        {
+            {
                 Debug.Log("left swipe");
             }
             //swipe right
             if (currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
-        {
+            {
                 Debug.Log("right swipe");
             }
         }
-    }
 
+    }
 }
