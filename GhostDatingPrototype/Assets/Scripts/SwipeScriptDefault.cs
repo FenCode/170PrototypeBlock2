@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwipeScriptDefault : MonoBehaviour
 {
 
-    //code from Gustav_Bok
+    //Based on code from Gustav_Bok
     //Posted: January 8, 2013 Last Edited: January 8, 2013
     //Accessed: November 10, 2018
     //https://forum.unity.com/threads/swipe-in-all-directions-touch-and-mouse.165416/

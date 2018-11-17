@@ -411,7 +411,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 167980810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 167980808}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &167980810
@@ -534,7 +545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Dennis
+  m_Text: Jane
 --- !u!222 &216473421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -919,18 +930,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 808770554}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1180237242}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -941,7 +941,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1818451836}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -951,17 +951,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 167980807}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -1066,7 +1055,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Dennise
+  m_Text: Dawson
 --- !u!222 &910747236
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1138,10 +1127,19 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdfasdf
+  m_Text: 'Likes: horror movies, videogames, japanese food, smiling @ strangers
+
+
+    Dislikes: tomatoes, waiting in line, rude people, cargo shorts, unsweet tea
+
+
+    Deathage: 8 months
+
+
+    Pronouns: he/him'
 --- !u!222 &959445670
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1203,7 +1201,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9245534a5dfd3c448b908c9f78e1e42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab432718572b2cb47bca0baaabe43f91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1382,7 +1380,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9245534a5dfd3c448b908c9f78e1e42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9d2546660d265d4fbec880d5bfc8f40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1451,7 +1449,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9245534a5dfd3c448b908c9f78e1e42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab432718572b2cb47bca0baaabe43f91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1816,7 +1814,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c9245534a5dfd3c448b908c9f78e1e42, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e9d2546660d265d4fbec880d5bfc8f40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1938,6 +1936,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4edc338e1241dc45b5d463cc2da6d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  matchPanel: {fileID: 1818451836}
+  mainMenuPanel: {fileID: 1180237242}
+  promptText: {fileID: 2057216224}
 --- !u!1 &1818451836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,10 +2112,21 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdfasdf
+  m_Text: 'Likes: cold weather, iced tea, animals, flowers, makeup, stand up comedy,
+    musicals, art
+
+
+    Dislikes: capitalism, mornings, soda, pink, birds, posers, large crowds, ignorance,
+    narks, authority
+
+
+    Pronouns: they/them
+
+
+    Deathage: 2 and a half years'
 --- !u!222 &1879355237
 CanvasRenderer:
   m_ObjectHideFlags: 0

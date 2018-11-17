@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SwipeScript : MonoBehaviour {
 
-    //code from Gustav_Bok
+    //Basede on code from Gustav_Bok
     //Posted: January 8, 2013 Last Edited: January 8, 2013
     //Accessed: November 10, 2018
     //https://forum.unity.com/threads/swipe-in-all-directions-touch-and-mouse.165416/
@@ -14,6 +15,15 @@ public class SwipeScript : MonoBehaviour {
     Vector2 firstPressPos;
     Vector2 secondPressPos;
     Vector2 currentSwipe;
+    public GameObject matchPanel;
+    public GameObject mainMenuPanel;
+    public Text promptText;
+
+    private void Start()
+    {
+        //matchPanel = GameObject.Find("/Canvas/MatchPanel");
+        //mainMenuPanel = GameObject.Find("/Canvas/MainMenuPanel");
+    }
 
     void Update()
     {
@@ -47,14 +57,23 @@ public class SwipeScript : MonoBehaviour {
             if (currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
             {
                 Debug.Log("left swipe");
+                promptText.text = "Do you want to match with Jane?";
+                activateMatch();
             }
             //swipe right
             if (currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
             {
                 Debug.Log("right swipe");
-                SceneManager.LoadScene("Date");
+                promptText.text = "Do you want to match with Dawson?";
+                activateMatch();
             }
         }
 
+    }
+
+    private void activateMatch()
+    {
+        matchPanel.SetActive(true);
+        mainMenuPanel.SetActive(false);
     }
 }
