@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SwipeScript : MonoBehaviour {
 
@@ -51,6 +52,7 @@ public class SwipeScript : MonoBehaviour {
             if (currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
             {
                 Debug.Log("right swipe");
+                SceneManager.LoadScene("Date");
             }
         }
 
