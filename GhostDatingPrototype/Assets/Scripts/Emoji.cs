@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //Aspects of a emoji: image, name, and weight it carries
-public class Emoji {
-
-    [SerializeField]
+public class Emoji : MonoBehaviour
+{
     private Image emojiImage;// image for the emoji
     [SerializeField]
     private Sprite emojiIcon;// image for the emoji
@@ -15,6 +14,8 @@ public class Emoji {
     [SerializeField]
     private int emojiWeight;//holds the emoji emotional value (1-10? 1-100?) 0 for sad, 10 for happy as a test basis for the emoji's
 
+    private ListControl listControl;
+
     public Emoji(Sprite newIcon, string newName, int newWeight)//constructor
     {
         this.emojiIcon = newIcon;
@@ -22,14 +23,14 @@ public class Emoji {
         this.emojiWeight = newWeight;
     }
 
-    public Emoji(Image newImage, string newName, int newWeight)//constructor
+    public void setEmoji(Emoji emoji)
     {
-        this.emojiImage = newImage;
-        this.emojiName = newName;
-        this.emojiWeight = newWeight;
+        SetEmojiIcon(emoji.emojiIcon);
+        SetEmojiName(emoji.emojiName);
+        SetEmojiWeight(emoji.emojiWeight);
     }
 
-    public void SetEmojiImage(Sprite mySprite)//set sprite
+    public void SetEmojiImage(Sprite mySprite)//set sprite, will be null if not referencing object
     {
         if (mySprite != null)
         {
@@ -85,4 +86,8 @@ public class Emoji {
         return emojiWeight;
     }
 
+    public void OnClick()
+    {
+        listControl.ButtonClicked(emojiIcon, emojiName, emojiWeight);
+    }
 }
